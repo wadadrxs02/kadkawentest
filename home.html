@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a165d3b8d1.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Walimatul Urus Aimi | Aiman</title>
+</head>
+
+<body>
+
+    <div class="page-content-scroll">
+        <div class="cover-class cover-bg-1">
+        </div>
+        <div class="cover-class2 cover-bg-2">
+        </div>
+    </div>
+
+
+    <!-- toolbar bottom -->
+    <div class="toolbar">
+        <!-- <div class="container"> -->
+        <ul class="toolbar-bottom toolbar-wrap">
+
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalRSVP">
+                    <i class="fas fa-envelope-open fa-2x"></i>
+                    RSVP
+                </button>
+            </li>
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalSOP">
+                    <i class="fas fa-tasks fa-2x"></i>
+                    S.O.P
+                </button>
+            </li>
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalContact">
+                    <i class="fas fa-phone fa-2x"></i>
+                    CONTACT
+                </button>
+            </li>
+            <li class="toolbar-item">
+                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalMap">
+                    <i class="fas fa-map-marked-alt fa-2x"></i>
+                    LOCATION
+                </button>
+            </li>
+        </ul>
+        <!-- </div> -->
+    </div>
+    <!-- end toolbar bottom -->
+
+    <!--=========================================START MODAL RSVP==================================================-->
+
+    <div class="modal fade" id="ModalRSVP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalRSVPTitle">RSVP Walimatul Urus</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="color:brown; text-align: center;">Untuk mematuhi SOP Majlis Perkahwinan, tetamu diminta
+                        menjawab RSVP untuk
+                        tujuan rekod kehadiran
+                        dan menyusun slot masa
+                        kedatangan.</p>
+                    <p style="text-align: center;">Sila jawab kehadiran anda di bawah dan memilih slot masa kehadiran
+                        anda SEBELUM 20 Februari
+                        2022. <br>
+
+                        Please respond to your presence below and select the slot you would like to attend BEFORE 20
+                        February 2022.
+                    </p>
+                    <form name="rsvpform">
+                        <div class="formFieldWrap">
+                            <label class="field-title" for="nama">Nama:
+                            </label>
+                            <input type="text" placeholder="Sila Isi Nama Anda" name="nama" class="contactField"
+                                id="nama" required />
+                        </div>
+
+                        <div class="formFieldWrap">
+                            <label class="field-title" for="nombortelefon">Nombor Telefon:
+                            </label>
+                            <input type="text" placeholder="Sila Isi Nombor Telefon Anda" name="nombortelefon"
+                                class="contactField" id="nombortelefon" required />
+                        </div>
+
+                        <div class="formFieldWrap">
+                            <label class="field-title" for="kedatangan">Kehadiran:
+                            </label>
+                            <select id="kedatangan" name="kedatangan" class="contactField">
+                                <option value="">Pilih Hadir atau Tidak</option>
+                                <option value="1">Hadir</option>
+                                <option value="2">Tidak Hadir</option>
+                            </select>
+                        </div>
+
+                        <div class="formFieldWrap" id="jumlahkedatanganform">
+                            <label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
+                            </label>
+                            <select id="jumlahkedatangan" name="jumlahkedatangan" class="contactField">
+                                <option value="">Sila Pilih Jumlah Kedatangan Anda</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+                        <div class="formFieldWrap" id="hubunganform">
+                            <label class="field-title" for="hubungan">Hubungan:
+                            </label>
+                            <select id="hubungan" name="hubungan" class="contactField">
+                                <option value="">Pilih Hubungan</option>
+                                <option value="1">Keluarga</option>
+                                <option value="2">Kenalan</option>
+                            </select>
+                        </div>
+
+                        <div class="formFieldWrap" id='waktuform'>
+                            <label class="field-title" for="waktu">Waktu Kedatangan:
+                            </label>
+                            <select id="waktu" name="waktu" class="contactField">
+                                <option value="">Sila Pilih Waktu Kedatangan Anda</option>
+                                <option value="11am-1230pm">11:30 am - 12:30 pm</option>
+                                <option value="12pm-2pm">12:30 pm - 2:00 pm </option>
+                                <option value="2pm-3pm">2:00 pm - 3:00 pm </option>
+                                <option value="3pm-4pm">3:00 pm - 4:00 pm</option>
+                                <option value="3pm-4pm">4:00 pm - 5:00 pm</option>
+                            </select>
+                        </div>
+
+
+                        <div class="formTextareaWrap" id="mesejform">
+                            <label class="field-title contactMessageTextarea" for="Mesej">Ucapan Manis Anda:
+                            </label>
+                            <textarea placeholder="Masukkan Ucapan Manis Anda Disini" name="mesej"
+                                class="contactTextarea" id="mesej" required></textarea>
+                        </div>
+                        <div id="showcalendar">
+                            <p style='text-align: center;'>Tambah di Kalendar</p>
+                            <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=Walimatul+Urus+Zuliana+%26+Tarmimi&location=No+13%2C+Lrg+3%2C+Kg.+Permatang+Limau%2C+06500+Langgar%2C+Kedah&dates=20220227T033000Z%2F20220227T090000Z'
+                                target="_blank">
+                                <img style='width: 40%;' src='images/button/GoogleCalendar.svg' class="imgcenter"></a>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="submit">Hantar</button>
+                        </div>
+                    </form>
+                    <div id="form_alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================START MODAL RSVP==================================================-->
+
+    <!--=========================================START MODAL SOP==================================================-->
+
+    <div class="modal fade" id="ModalSOP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Panduan S.O.P menghadiri Majlis Sosial</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><span><i class="fas fa-check a"></i>Membuat saringan dan daftar kehadiran di pintu
+                                masuk (buku rekod kehadiran ATAU scan QR code).
+                            </span></li>
+                        <li><span><i class="fas fa-check a"></i>Pastikan anda sihat dan tidak bergejala</span>
+                        </li>
+                        <li><span><i class="fas fa-check a"></i>Memakai pelitup muka.</span></li>
+                        <li><span><i class="fas fa-check a"></i>Penjarakan sosial (tidak bersentuhan dengan
+                                tetamu yang
+                                lain).</span></li>
+                        <li><span><i class="fas fa-check a"></i>Tetamu undangan perlu memberi kerjasama dalam
+                                mematuhi
+                                masa yang diperuntukkan bagi memberi
+                                ruang kepada tetamu yang
+                                akan hadir untuk sesi seterusnya.</span></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================END MODAL SOP==================================================-->
+
+    <!--=========================================START Modal Contact==================================================-->
+
+    <div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hubungi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Zulkifli
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+60134910099" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/w4sr8m" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Zuliza
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+60189463097" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/nef4ku" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gridcontainer">
+                        <div class="gridname">
+                            Zuliani
+                        </div>
+                        <div class="griditem">
+                            <a href="tel:+601126008201" target="_blank">
+                                <img src="images/icons/call.png" alt="" width="70%">
+                            </a>
+                        </div>
+                        <div class="griditem">
+                            <a href="https://wa.link/huxh4x" target="_blank">
+                                <img src="images/icons/whatsapp.png" alt="" width="50%">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================END Modal Contact==================================================-->
+
+    <!--================================START Modal Map===========================================================-->
+
+    <div class="modal fade" id="ModalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lokasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Google Map Copied Code -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.290161413082!2d100.49018191476848!3d6.091559395588933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c1ac982ba0604a8!2zNsKwMDUnMjkuNiJOIDEwMMKwMjknMzIuNSJF!5e0!3m2!1sen!2smy!4v1642669481884!5m2!1sen!2smy"
+                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" class='imgcenter'>
+                    </iframe>
+
+                    <div class="gridcontainer2">
+
+                        <div class="griditem2">
+                            <a href="https://www.waze.com/en/live-map/directions?latlng=6.091554%2C100.492351"
+                                target="_blank">
+                                <img src="images/button/waze.svg" alt="" width="150px"><br>
+
+                            </a>
+                        </div>
+
+                        <div class="griditem2">
+                            <a href="https://goo.gl/maps/LkGJjETf83Dz5whk6" target="_blank">
+                                <img src="images/button/googlemap.svg" alt="" width="150px"> <br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================================END Modal Map===========================================================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
