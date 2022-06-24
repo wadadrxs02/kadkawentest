@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap"); */
+@import url("http://fonts.cdnfonts.com/css/stadella");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 .cover-bg-1 {
   background-image: url(images/covers/girl.png);
@@ -114,7 +115,7 @@
 }
 
 .modal-header {
-  background-color: #bba77d;
+  background-color: #aebc9d;
 }
 
 .buttonhadir {
@@ -419,7 +420,7 @@ body {
 }
 
 .hari {
-  font-family: "Niconne";
+  font-family: "stadella";
   font-size: 40px;
   color: #7c6744;
   text-align: center;
