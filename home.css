@@ -212,3 +212,216 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.Nav_but {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 65% auto auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gridname {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin: auto;
+  width: 90%;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 1em;
+}
+
+.griditem {
+  margin: auto;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.gridcontainer2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.griditem2 {
+  margin: auto;
+}
+
+#hubunganform {
+  display: none;
+}
+
+#jumlahkedatanganform {
+  display: none;
+}
+
+#waktukenalanform {
+  display: none;
+}
+
+#waktukeluargaform {
+  display: none;
+}
+
+#mesejform {
+  display: none;
+}
+#waktuform {
+  display: none;
+}
+
+#waktu1 {
+  display: none;
+}
+#waktu2 {
+  display: none;
+}
+#waktu3 {
+  display: none;
+}
+#waktu4 {
+  display: none;
+}
+#waktu5 {
+  display: none;
+}
+
+#timer {
+  font-size: 2.5em;
+  font-weight: 100;
+  color: black;
+  text-shadow: 0 0 20px #f8e432;
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 90px;
+}
+
+#timer div span {
+  color: black;
+  display: block;
+  font-size: 0.35em;
+  font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  .outside {
+    position: relative;
+    width: 70vmin;
+    height: 70vmin;
+    background: #7c6744;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      83% 12%,
+      100% 43%,
+      94% 78%,
+      68% 100%,
+      32% 100%,
+      6% 78%,
+      0% 43%,
+      17% 12%
+    );
+    clip-path: polygon(
+      50% 0%,
+      83% 12%,
+      100% 43%,
+      94% 78%,
+      68% 100%,
+      32% 100%,
+      6% 78%,
+      0% 43%,
+      17% 12%
+    );
+  }
+
+  .inside {
+    max-width: 350px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      83% 12%,
+      100% 43%,
+      94% 78%,
+      68% 100%,
+      32% 100%,
+      6% 78%,
+      0% 43%,
+      17% 12%
+    );
+    clip-path: polygon(
+      50% 0%,
+      83% 12%,
+      100% 43%,
+      94% 78%,
+      68% 100%,
+      32% 100%,
+      6% 78%,
+      0% 43%,
+      17% 12%
+    );
+  }
+
+  .timer-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+}
+.timer-style {
+  padding-top: 20px;
+  padding-bottom: 2px;
+  background-color: white;
+  text-align: center;
+}
+body {
+  background-color: white;
+}
+.btn-primary {
+  background-color: #faa307;
+  border: 0;
+  color: #000000;
+}
+
+.hari {
+  font-family: "Niconne";
+  font-size: 40px;
+  color: #3a3a3f;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding-left: 2px;
+}
+/* .a {
+  content: "✔" !important;
+  padding-left: 2px;
+} */
+.a {
+  padding-right: 4px;
+}
+#showcalendar {
+  display: none;
+}
