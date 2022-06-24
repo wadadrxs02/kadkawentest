@@ -318,8 +318,8 @@
 #timer {
   font-size: 2.5em;
   font-weight: 100;
-  color: black;
-  text-shadow: 0 0 20px #f8e432;
+  color: #555a61;
+  text-shadow: 0 0 20px #bba77d;
 }
 
 #timer div {
@@ -338,7 +338,7 @@
     position: relative;
     width: 70vmin;
     height: 70vmin;
-    background: #7c6744;
+    background: #bba77d;
     -webkit-clip-path: polygon(
       50% 0%,
       83% 12%,
