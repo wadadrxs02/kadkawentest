@@ -413,7 +413,7 @@ body {
   background-color: white;
 }
 .btn-primary {
-  background-color: #faa307;
+  background-color: #aebc9d !important;
   border: 0;
   color: #000000;
 }
