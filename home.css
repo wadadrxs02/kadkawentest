@@ -438,3 +438,8 @@ ul {
 #showcalendar {
   display: none;
 }
+
+.instruction {
+  text-align: center;
+  color: #555a61;
+}
