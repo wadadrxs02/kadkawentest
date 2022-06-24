@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <div class="page-content-scroll">
         <div class="cover-class cover-bg-1">
         </div>
@@ -24,7 +23,7 @@
 
         <!-- ============ START TIMER ================ -->
         <div class="col-md-12">
-            <h3 class="hari pt-5">Menghitung Hari</h3>
+            <h3 class="hari">Menghitung Hari</h3>
         </div>
         <div class="timer-countdown cover-class3">
             <div class="outside">
@@ -38,10 +37,7 @@
 
         </div>
         <!--============END TIMER================-->
-
     </div>
-
-
     <!-- toolbar bottom -->
     <div class="toolbar">
         <!-- <div class="container"> -->
@@ -53,12 +49,7 @@
                     RSVP
                 </button>
             </li>
-            <li class="toolbar-item">
-                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalSOP">
-                    <i class="fas fa-tasks fa-2x"></i>
-                    S.O.P
-                </button>
-            </li>
+
             <li class="toolbar-item">
                 <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalContact">
                     <i class="fas fa-phone fa-2x"></i>
@@ -90,41 +81,39 @@
                 </div>
                 <div class="modal-body">
 
-                    <p style="text-align: center;">Sila jawab kehadiran anda di bawah dan memilih slot masa
-                        kehadiran anda SEBELUM 20 Julai 2022. <br>
-
-                        Please respond to your presence below and select the slot you would like to attend BEFORE 20
-                        July 2022.
-                    </p>
+                    <p style="text-align: center;"><b>Sila jawab kehadiran anda di bawah dan memilih slot masa
+                            kehadiran anda SEBELUM 20 Julai 2022. <br> </b> </p>
+                    <hr>
+                    <p style="text-align: center;"><b> Please respond to your presence below and select the slot you
+                            would like to attend BEFORE 20
+                            July 2022.
+                        </b> </p>
+                    <hr>
                     <form name="rsvpform">
-                        <div class="formFieldWrap">
-                            <label class="field-title" for="nama">Nama:
-                            </label>
-                            <input type="text" placeholder="Sila Isi Nama Anda" name="nama" class="contactField"
-                                id="nama" required />
+                        <div class="form-group rsvpform">
+                            <label>Nama:</label>
+                            <input type="email" class="form-control" placeholder="Sila Isi Nama Anda" name="nama"
+                                id="nama" required>
                         </div>
-
-                        <div class="formFieldWrap">
-                            <label class="field-title" for="nombortelefon">Nombor Telefon:
-                            </label>
-                            <input type="text" placeholder="Sila Isi Nombor Telefon Anda" name="nombortelefon"
-                                class="contactField" id="nombortelefon" required />
+                        <div class="form-group rsvpform">
+                            <label for="nombortelefon">Nombor Telefon:</label>
+                            <input type="text" class="form-control" placeholder="Sila Isi Nombor Telefon Anda"
+                                name="nombortelefon" class="form-control" id="nombortelefon" required />
                         </div>
-
-                        <div class="formFieldWrap">
-                            <label class="field-title" for="kedatangan">Kehadiran:
-                            </label>
-                            <select id="kedatangan" name="kedatangan" class="contactField">
+                        <div class="form-group rsvpform">
+                            <label for="kedatangan">Kehadiran:</label>
+                            <select class="form-control" id="kedatangan" name="kedatangan" class="form-control">
                                 <option value="">Pilih Hadir atau Tidak</option>
                                 <option value="1">Hadir</option>
                                 <option value="2">Tidak Hadir</option>
                             </select>
                         </div>
-
-                        <div class="formFieldWrap" id="jumlahkedatanganform">
+                    </form>
+                    <form name="rsvpform">
+                        <div class="form-group" id="jumlahkedatanganform">
                             <label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
                             </label>
-                            <select id="jumlahkedatangan" name="jumlahkedatangan" class="contactField">
+                            <select class="form-control" id="jumlahkedatangan" name="jumlahkedatangan">
                                 <option value="">Sila Pilih Jumlah Kedatangan Anda</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -139,20 +128,20 @@
                             </select>
                         </div>
 
-                        <div class="formFieldWrap" id="hubunganform">
+                        <div class="form-group" id="hubunganform">
                             <label class="field-title" for="hubungan">Hubungan:
                             </label>
-                            <select id="hubungan" name="hubungan" class="contactField">
+                            <select id="hubungan" name="hubungan" class="form-control">
                                 <option value="">Pilih Hubungan</option>
                                 <option value="1">Keluarga</option>
                                 <option value="2">Kenalan</option>
                             </select>
                         </div>
 
-                        <div class="formFieldWrap" id='waktuform'>
+                        <div class="form-group" id='waktuform'>
                             <label class="field-title" for="waktu">Waktu Kedatangan:
                             </label>
-                            <select id="waktu" name="waktu" class="contactField">
+                            <select id="waktu" name="waktu" class="form-control">
                                 <option value="">Sila Pilih Waktu Kedatangan Anda</option>
                                 <option value="11am-1230pm">11:30 am - 12:30 pm</option>
                                 <option value="12pm-2pm">12:30 pm - 2:00 pm </option>
@@ -163,11 +152,12 @@
                         </div>
 
 
-                        <div class="formTextareaWrap" id="mesejform">
-                            <label class="field-title contactMessageTextarea" for="Mesej">Ucapan Manis Anda:
+                        <div class="form-group" id="mesejform">
+                            <label for="Mesej">Ucapan Manis Anda:
                             </label>
-                            <textarea placeholder="Masukkan Ucapan Manis Anda Disini" name="mesej"
-                                class="contactTextarea" id="mesej" required></textarea>
+                            <textarea class="form-control" id="mesej" rows="3"
+                                placeholder="Masukkan Ucapan Manis Anda Disini"></textarea>
+
                         </div>
                         <div id="showcalendar">
                             <p style='text-align: center;'>Tambah di Kalendar</p>
@@ -186,43 +176,6 @@
     </div>
     <!--=========================================START MODAL RSVP==================================================-->
 
-    <!--=========================================START MODAL SOP==================================================-->
-
-    <div class="modal fade" id="ModalSOP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Panduan S.O.P menghadiri Majlis Sosial</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li><span><i class="fas fa-check a"></i>Membuat saringan dan daftar kehadiran di pintu
-                                masuk (buku rekod kehadiran ATAU scan QR code).
-                            </span></li>
-                        <li><span><i class="fas fa-check a"></i>Pastikan anda sihat dan tidak bergejala</span>
-                        </li>
-                        <li><span><i class="fas fa-check a"></i>Memakai pelitup muka.</span></li>
-                        <li><span><i class="fas fa-check a"></i>Penjarakan sosial (tidak bersentuhan dengan
-                                tetamu yang
-                                lain).</span></li>
-                        <li><span><i class="fas fa-check a"></i>Tetamu undangan perlu memberi kerjasama dalam
-                                mematuhi
-                                masa yang diperuntukkan bagi memberi
-                                ruang kepada tetamu yang
-                                akan hadir untuk sesi seterusnya.</span></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=========================================END MODAL SOP==================================================-->
 
     <!--=========================================START Modal Contact==================================================-->
 
