@@ -20,24 +20,19 @@ form.addEventListener("submit", (e) => {
 $("#kedatangan").change(function () {
   if ($(this).val() == 1) {
     $("#jumlahkedatanganform").show();
-    $("#hubunganform").show();
     $("#namaform").show();
     $("#showcalendar").show();
     $("#waktuform").show();
   } else if ($(this).val() == 2) {
     $("#namaform").hide();
     $("#jumlahkedatanganform").hide();
-    $("#hubunganform").hide();
     $("#showcalendar").hide();
-
-    $("#waktukeluargaform").hide();
     $("#waktuform").hide();
   } else {
     $("#namaform").hide();
     $("#jumlahkedatanganform").hide();
     $("#showcalendar").hide();
 
-    $("#hubunganform").hide();
     $("#waktuform").hide();
   }
 });
