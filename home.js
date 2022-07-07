@@ -9,27 +9,23 @@ form.addEventListener("submit", (e) => {
     .then((html) => {
       // you can put any JS code here
       alert("RSVP anda berjaya dihantar. Terima Kasih :) ");
+      form.reset();
       $("#ModalRSVP").modal("hide");
     });
 });
 
 $("#kedatangan").change(function () {
-  if ($(this).val() == 1) {
+  if ($(this).val() == "hadir") {
     $("#jumlahkedatanganform").show();
     $("#namaform").show();
     $("#showcalendar").show();
     $("#waktuform").show();
-  } else if ($(this).val() == 2) {
-    $("#namaform").hide();
-    $("#jumlahkedatanganform").hide();
-    $("#showcalendar").hide();
-    $("#waktuform").hide();
   } else {
     $("#namaform").hide();
     $("#jumlahkedatanganform").hide();
     $("#showcalendar").hide();
-
     $("#waktuform").hide();
+    $("#ModalRSVP").modal("hide");
   }
 });
 

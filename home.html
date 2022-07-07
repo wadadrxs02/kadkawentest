@@ -88,19 +88,18 @@
                             July 2022.
                         </b> </p>
                     <hr>
-                    <form name="rsvpform">
-                        <div class="form-group rsvpform">
-                            <label for="kedatangan">Kehadiran:</label>
-                            <select class="form-control" id="kedatangan" name="kedatangan" class="form-control"
-                                required>
-                                <option value="">Pilih Hadir atau Tidak</option>
-                                <option value="1">Hadir</option>
-                                <option value="2">Tidak Hadir</option>
-                            </select>
-                        </div>
-                    </form>
                     <form name="rsvpform" method="post" id="sheetdb-form"
                         action="https://sheetdb.io/api/v1/jcncf6a26jgmu">
+                        <div class="form-group rsvpform">
+                            <label for="kedatangan">Kehadiran:</label>
+                            <select class="form-control" id="kedatangan" name="data[kedatangan]" class="form-control"
+                                required>
+                                <option value="">Pilih Hadir atau Tidak</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak">Tidak Hadir</option>
+                            </select>
+                        </div>
+
                         <div class="form-group rsvpform" id="namaform">
                             <label>Nama:</label>
                             <input type="name" class="form-control" placeholder="Sila Isi Nama Anda" name="data[nama]"
