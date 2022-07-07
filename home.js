@@ -1,20 +1,15 @@
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxWuk_UqliDRo9fWqp_z7hP1FJB6STpAuU7UolmlluOZwaUnic8Vdm8h1pi3k2o48HT/exec ";
-const form = document.forms["rsvpform"];
-
+var form = document.getElementById("sheetdb-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) =>
-      $("#form_alert").html(
-        "<div class='alert alert-success'> RSVP sent successfully.</div>"
-      )
-    )
-    .catch((error) =>
-      $("#form_alert").html(
-        "<div class='alert alert-success'> RSVP dont sent successfully.</div>"
-      )
-    );
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  })
+    .then((response) => response.json())
+    .then((html) => {
+      // you can put any JS code here
+      alert("success");
+    });
 });
 
 $("#kedatangan").change(function () {
