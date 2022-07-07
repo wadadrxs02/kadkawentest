@@ -9,6 +9,7 @@ form.addEventListener("submit", (e) => {
     .then((html) => {
       // you can put any JS code here
       alert("success");
+      $("#ModalRSVP").modal("hide");
     });
 });
 
