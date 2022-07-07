@@ -21,11 +21,11 @@ $("#kedatangan").change(function () {
   if ($(this).val() == 1) {
     $("#jumlahkedatanganform").show();
     $("#hubunganform").show();
-    $("#mesejform").show();
+    $("#namaform").show();
     $("#showcalendar").show();
     $("#waktuform").show();
   } else if ($(this).val() == 2) {
-    $("#mesejform").show();
+    $("#namaform").show();
     $("#jumlahkedatanganform").hide();
     $("#hubunganform").hide();
     $("#showcalendar").hide();
@@ -33,7 +33,7 @@ $("#kedatangan").change(function () {
     $("#waktukeluargaform").hide();
     $("#waktuform").hide();
   } else {
-    $("#mesejform").hide();
+    $("#namaform").hide();
     $("#jumlahkedatanganform").hide();
     $("#showcalendar").hide();
 
