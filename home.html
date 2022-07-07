@@ -90,8 +90,8 @@
                     <hr>
                     <form name="rsvpform">
                         <div class="form-group rsvpform">
-                            <label for="kedatangan">Kehadiran:</label>
-                            <select class="form-control" id="kedatangan" name="kedatangan" class="form-control"
+                            <label for="kehadiran">Kehadiran:</label>
+                            <select class="form-control" id="kehadiran" name="data[kehadiran]" class="form-control"
                                 required>
                                 <option value="">Pilih Hadir atau Tidak</option>
                                 <option value="1">Hadir</option>
@@ -99,16 +99,17 @@
                             </select>
                         </div>
                     </form>
-                    <form name="rsvpform">
+                    <form name="rsvpform" method="post" action="https://sheetdb.io/api/v1/jcncf6a26jgmu"
+                        id="sheetdb-form">
                         <div class="form-group rsvpform" id="namaform">
                             <label>Nama:</label>
-                            <input type="email" class="form-control" placeholder="Sila Isi Nama Anda" name="nama"
+                            <input type="email" class="form-control" placeholder="Sila Isi Nama Anda" name="data[nama]"
                                 id="nama" required>
                         </div>
                         <div class="form-group" id="jumlahkedatanganform">
                             <label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
                             </label>
-                            <select class="form-control" id="jumlahkedatangan" name="jumlahkedatangan">
+                            <select class="form-control" id="jumlahkedatangan" name="data[jumlah]">
                                 <option value="">Sila Pilih Jumlah Kedatangan Anda</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -239,6 +240,22 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="home.js"></script>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                alert('success')
+            });
+        });
+    </script>
 </body>
 
 </html>
