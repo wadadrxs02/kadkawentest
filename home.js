@@ -25,7 +25,7 @@ $("#kedatangan").change(function () {
     $("#showcalendar").show();
     $("#waktuform").show();
   } else if ($(this).val() == 2) {
-    $("#namaform").show();
+    $("#namaform").hide();
     $("#jumlahkedatanganform").hide();
     $("#hubunganform").hide();
     $("#showcalendar").hide();
