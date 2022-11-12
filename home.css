@@ -408,10 +408,12 @@ html {
 }
 body {
   display: flex;
-  font-family: "Quicksand", sans-serif !important;
-  background-color: white;
+  flex-direction: column;
+  margin: 0 auto;
   height: 100vh;
   height: -webkit-fill-available;
+  font-family: "Quicksand", sans-serif !important;
+  background-color: white;
 }
 main {
   flex: 1;
