@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,9 +11,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        ul {
+            list-style-type: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid white;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: orange;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        div {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: white;
+            height: 1000px;
+        }
+    </style>
 </head>
 
 <body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
     <div class="page-content-scroll">
         <div class="cover-class cover-bg-1">
         </div>
@@ -36,32 +72,7 @@
         <!--============END TIMER================-->
     </div>
     <!-- toolbar bottom -->
-    <div class="toolbar">
-        <!-- <div class="container"> -->
-        <ul class="toolbar-bottom toolbar-wrap">
 
-            <li class="toolbar-item">
-                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalRSVP">
-                    <i class="fas fa-envelope-open fa-2x"></i>
-                    RSVP
-                </button>
-            </li>
-
-            <li class="toolbar-item">
-                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalContact">
-                    <i class="fas fa-phone fa-2x"></i>
-                    CONTACT
-                </button>
-            </li>
-            <li class="toolbar-item">
-                <button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalMap">
-                    <i class="fas fa-map-marked-alt fa-2x"></i>
-                    LOCATION
-                </button>
-            </li>
-        </ul>
-        <!-- </div> -->
-    </div>
     <!-- end toolbar bottom -->
 
     <!--=========================================START MODAL RSVP==================================================-->
