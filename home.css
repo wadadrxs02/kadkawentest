@@ -403,9 +403,19 @@
   background-color: white;
   text-align: center;
 }
+html {
+  height: -webkit-fill-available;
+}
 body {
+  display: flex;
   font-family: "Quicksand", sans-serif !important;
   background-color: white;
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+main {
+  flex: 1;
+  overflow: scroll;
 }
 .btn-primary {
   background-color: #aebc9d !important;
